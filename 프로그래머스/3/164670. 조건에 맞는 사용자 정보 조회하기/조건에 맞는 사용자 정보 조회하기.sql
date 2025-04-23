@@ -5,5 +5,5 @@ ON U.USER_ID = B.WRITER_ID
 WHERE B.WRITER_ID IN(SELECT WRITER_ID
                    FROM USED_GOODS_BOARD
                    GROUP BY WRITER_ID
-                   HAVING COUNT(BOARD_ID) >= 3)
+                   HAVING COUNT(WRITER_ID) >= 3)
 ORDER BY U.USER_ID DESC;
