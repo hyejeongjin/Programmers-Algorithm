@@ -2,17 +2,14 @@ import java.util.*;
 
 class Solution {
     public String[] solution(String[] strArr) {
-        String[] answer = {};
-        List<String> list = new ArrayList<String>(Arrays.asList(strArr));
+        List<String> list = new ArrayList<>();
         
-        answer = strArr;
-        
-        for(int i=0; i<strArr.length; i++){
-            if(strArr[i].contains("ad")){
-                list.remove(strArr[i]);
-                answer = list.toArray(new String[0]);
+        for (String s : strArr) {
+            if (!s.contains("ad")) {
+                list.add(s);
             }
         }
-        return answer;
+        
+        return list.toArray(new String[0]);
     }
 }
