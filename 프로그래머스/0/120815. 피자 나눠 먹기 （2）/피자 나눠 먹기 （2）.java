@@ -10,8 +10,8 @@ class Solution {
     }
     
     public static int getGCD(int pizza, int n){
-        if(pizza % n == 0){
-            return n;
+        if(n == 0){
+            return pizza;
         }
         return getGCD(n, pizza%n);
     }
