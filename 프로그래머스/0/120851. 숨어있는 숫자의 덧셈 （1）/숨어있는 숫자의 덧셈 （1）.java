@@ -3,11 +3,10 @@ class Solution {
         int answer = 0;
         
         for(int i=0; i<my_string.length(); i++){
-            if(my_string.charAt(i) < 58){
+            if(my_string.charAt(i) > 48 && my_string.charAt(i) < 58){
                 answer += (my_string.charAt(i) - 48);
             }
         }
-        
         return answer;
     }
 }
