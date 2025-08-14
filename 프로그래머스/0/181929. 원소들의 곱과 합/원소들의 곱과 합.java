@@ -14,9 +14,6 @@ class Solution {
         if(multi < Math.round(Math.pow(plus, 2))){
             answer = 1;
         }
-        else{
-            answer = 0;
-        }
         
         return answer;
     }
