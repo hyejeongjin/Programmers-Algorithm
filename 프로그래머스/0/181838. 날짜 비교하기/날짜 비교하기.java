@@ -3,7 +3,7 @@ class Solution {
         int answer = 0;
         
         for(int i = 0; i < 3; i++){
-            if(date1[0] < date2[0]){ //년도가 앞설 경우
+            if(date1[0] < date2[0]){ // 년도가 앞설 경우
                 answer = 1;
             }
             else if(date1[0] == date2[0]){ // 년도가 같을 경우
