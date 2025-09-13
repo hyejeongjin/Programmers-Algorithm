@@ -5,9 +5,8 @@ class Solution {
         String answer = "";
         BigInteger aNum = new BigInteger(a);
         BigInteger bNum = new BigInteger(b);
-        BigInteger result = aNum.add(bNum);
         
-        answer = String.valueOf(result);
+        answer = String.valueOf(aNum.add(bNum));
         
         return answer;
     }
