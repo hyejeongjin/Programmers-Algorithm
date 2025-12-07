@@ -4,6 +4,7 @@ class Solution {
     public int solution(int a, int b) {
         int answer = 0;
         int gcd = getGCD(a, b);
+        a = a / gcd;
         b = b / gcd;
         
         while(b % 2 == 0){
